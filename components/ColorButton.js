@@ -1,32 +1,21 @@
 import { useState } from "react"
 import { StyleSheet, Text, TouchableHighlight, View } from "react-native"
 
-const ColorButton  = (props) => {
-    // const [bgColor, setBgColor] = useState("blue");
+const ColorButton  = ({color, onPress}) => {
     return(
     <TouchableHighlight style={styles.button}
-    //   onPress={() => setBgColor("yellow")}
-    //   underlayColor={"orange"}
+      onPress={() => onPress(color)}
+      underlayColor={"orange"}
       >
         <View style={styles.row}>
-            <View style={[styles.sample, {backgroundColor: props.color}]}/>
-        <Text style={styles.buttonText}>{props.color}</Text>
+            <View style={[styles.sample, {backgroundColor: color}]}/>
+        <Text style={styles.buttonText}>{color}</Text>
         </View>
       </TouchableHighlight>
     );
 }
 
 const styles = StyleSheet.create({
-    container: {
-      flex: 1,
-      display: 'flex',
-      justifyContent: 'center',
-      alignItems: 'center',
-    },
-    text: {
-      textAlign: 'center',
-      fontSize: 22,
-    },
     button: {
       margin: 10,
       padding: 10,
