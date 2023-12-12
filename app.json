@@ -1,13 +1,14 @@
 {
   "expo": {
     "name": "ColorCatalog",
+    "description": "Catalog your colors. Save your favorite web colors in a list and view the details of each color",
     "slug": "ColorCatalog",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/icon.png",
+    "icon": "./assets/cc-icon.png",
     "userInterfaceStyle": "light",
     "splash": {
-      "image": "./assets/splash.png",
+      "image": "./assets/cc-splash.png",
       "resizeMode": "contain",
       "backgroundColor": "#ffffff"
     },
